@@ -8,3 +8,11 @@ under `lua/plugins`.
 This uses `mason.nvim` as a package manager for LSPs and formatters. These packages
 can be used with `mason-lspconfig.nvim`. I.e., it currently requires `clangd` and 
 enables it automatically.
+
+## Install
+
+Just need to `git clone` into ~/.config/nvim
+
+```console
+git clone git@github.com:arthurfeeney/nvim-config.git .config/nvim/
+```
