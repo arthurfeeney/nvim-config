@@ -8,7 +8,11 @@ return {
     opts = function() 
       local capabilities = require("blink.cmp").get_lsp_capabilities()
       return {
-        ensure_installed = {"clangd"},
+        ensure_installed = {
+          "clangd", 
+          "ruff",
+          "pyright"
+        },
         automatic_installation = false,
         handlers = {
           function(server_name)
@@ -27,6 +31,8 @@ return {
     --    "neovim/nvim-lspconfig",
     --},
     automatic_enable = {
-        "clangd"
+        "clangd",
+        "ruff",
+        "pyright"
     }
 }
